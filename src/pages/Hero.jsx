@@ -1,72 +1,42 @@
-import React from "react";
+import React from 'react'
+import Nav from '../components/Nav'
+import Servicves from '../components/Servicves'
+import FAQSection from '../components/Faqs'
 
 const Hero = () => {
   return (
     <>
-      <div className="px-20 pt-6">
+    <Nav />
+    <div className="px-12">
+      <h1 className='text-6xl pt-30  text-center'>Carbon consultants <br /> for savvy SMEs</h1>
+      <p className='text-center pt-8'>We help small and growing businesses cut carbon, boost credibility, and <br /> move forward with confidence. Your low-carbon journey starts here.</p>     
+     <div className='text-center pt-5'>
+       <button className='bg-black text-xl  text-white py-2 px-4 rounded-full '> Get Started </button>
+     </div>
 
-        <div className="flex justify-between items-center">
-        <div className="w-1/2 space-y-2 font-bold">
-          <h1 className="text-5xl"> Smart Dukaan </h1>
-          <h1 className="text-6xl">Community Connect</h1>
-        </div>
+     <div className='grid grid-cols-4  gap-4 pt-20 pb-20'>
+      <img className='rounded-xl' src="https://framerusercontent.com/images/lOIiZIbZ6z5IuKw8w5L1gAueiQ.png?scale-down-to=1024" alt="hero" />
+      <img className='rounded-xl' src="https://framerusercontent.com/images/xmOi3oUEWf9jXx7zkMLeYyPG6G4.png?scale-down-to=1024" alt="" />
+      <img className='rounded-xl' src="https://framerusercontent.com/images/uNtTHiBiVKVsv1TG5HTmpSxQ.png?scale-down-to=1024" alt="" />
+      <img className='rounded-xl' src="https://framerusercontent.com/images/C1gsYq8L4SNYikf5gEIRtjadD8.png?scale-down-to=1024" alt="" />
+     </div>
 
-      <div className="w-1/4 space-y-4 ">
-          <p className="text-2xl">
-            Connecting local businesses with their community through beautiful
-            digital storefronts. Discover, connect, and support your
-            neighborhood shops.
-          </p>
-          
-          <button className=" border-2 text-3xl ml-8 py-2 px-4 ">
-           Explore Now
-          </button>
-        </div>
-        </div>
-        
-         <div className="w-full mt-10 ">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        {/* Image 1 */}
-        <div>
-          <img
-            src="https://images.unsplash.com/photo-1754245646334-f11fce69d822?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGxvY2FsJTIwc2hvcHMlMjBpbmRpYXxlbnwwfHwwfHx8MA%3D%3D"
-            alt=""
-            className="w-full  h-120 object-cover"
-          />
-        </div>
+     {/* //About Us Section */}
 
-        {/* Image 2 */}
-        <div>
-          <img
-            src="https://images.unsplash.com/photo-1536514888772-a269c6a8a198?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bG9jYWwlMjBzaG9wcyUyMGluZGlhfGVufDB8fDB8fHww"
-            alt=""
-            className="w-full mt-15 h-120 object-cover"
-          />
-        </div>
+     <div className='text-center'>
+      <button className='bg-black text-sm pb  text-white py-2 px-4 rounded-full '>About</button>
+      <p className='text-4xl pt-4'>We're a small team of passionate <br /> carbon experts helping forward-thinking <br /> companies prepare for the future.</p>
+     <button className='bg-black text-xl  text-white py-2 px-4 rounded-full mt-7 '> Get Started </button>
+     </div>
 
-        {/* Image 3 */}
-        <div>
-          <img
-            src="https://images.unsplash.com/photo-1723155928463-1dd3aca53bab?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGxvY2FsJTIwc2hvcHMlMjBpbmRpYXxlbnwwfHwwfHx8MA%3D%3D"
-            alt=""
-            className="w-full  h-120 object-cover"
-          />
-        </div>
 
-        {/* Image 4 */}
-        <div>
-          <img
-            src="https://images.unsplash.com/photo-1739066598279-1297113f5c6a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGxvY2FsJTIwc2hvcHMlMjBpbmRpYXxlbnwwfHwwfHx8MA%3D%3D"
-            alt=""
-            className="w-ful mt-10  h-120 object-cover"
-          />
-        </div>
-      </div>
+     <Servicves />
+     <FAQSection />
+   
     </div>
-
-      </div>
+   
     </>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero
