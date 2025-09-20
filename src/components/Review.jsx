@@ -68,6 +68,10 @@ const ReviewSlider = () => {
   }, [current]); // re-run interval when current changes
 
   return (
+    <>
+    <h2 className="text-6xl text-center mb-8 pt-10">Frequently Asked Questions</h2>
+      <p className="text-center pb-20">Here are the top questions our clients ask before getting started.</p>
+    
     <div className="relative w-full max-w-6xl mx-auto p-6">
       {/* Slider container */}
       <div className="overflow-hidden">
@@ -131,6 +135,7 @@ const ReviewSlider = () => {
 
       
     </div>
+    </>
   );
 };
 

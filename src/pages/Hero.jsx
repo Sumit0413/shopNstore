@@ -2,6 +2,9 @@ import React from 'react'
 import Nav from '../components/Nav'
 import Servicves from '../components/Servicves'
 import FAQSection from '../components/Faqs'
+import Resources from '../components/Resourses'
+import Banner from '../components/Banner'
+import Footer from '../components/Footer'
 
 const Hero = () => {
   return (
@@ -31,10 +34,14 @@ const Hero = () => {
 
 
      <Servicves />
+     <Resources />
      <FAQSection />
+     <Banner />
+     
+   
    
     </div>
-   
+   <Footer />
     </>
   )
 }
