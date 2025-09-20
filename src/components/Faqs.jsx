@@ -3,30 +3,30 @@ import { FaPlus, FaMinus } from "react-icons/fa";
 
 const faqs = [
   {
-    question: "What is GreenLeaf?",
-    answer:
-      "GreenLeaf is a sustainability platform that helps businesses measure, reduce, and report their carbon footprint.",
-  },
-  {
-    question: "How does the carbon tracking work?",
-    answer:
-      "We use industry-leading methodologies to track your emissions across scope 1, 2, and 3, providing clear dashboards and insights.",
-  },
-  {
-    question: "Can I integrate GreenLeaf with my existing tools?",
-    answer:
-      "Yes! GreenLeaf integrates seamlessly with common business tools and APIs to automate your data collection.",
-  },
-  {
-    question: "Is there a free trial?",
-    answer:
-      "Absolutely. You can try GreenLeaf with a free 14-day trial to explore all features before committing.",
-  },
-    {
-    question: "How does the carbon tracking work?",
-    answer:
-      "We use industry-leading methodologies to track your emissions across scope 1, 2, and 3, providing clear dashboards and insights.",
-  },
+  question: "What is ShopNStore?",
+  answer:
+    "ShopNStore is a simple digital business card platform that helps local shops create an online presence, connect with customers, and grow their business.",
+},
+{
+  question: "What information can I showcase?",
+  answer:
+    "You can display your shop name, logo, address with Google Maps link, contact details, opening hours, a photo gallery, and even your top products or services.",
+},
+{
+  question: "Can I manage payments with ShopNStore?",
+  answer:
+    "Yes! ShopNStore lets you track pending and completed payments, generate UPI QR codes, and even share digital receipts with your customers.",
+},
+{
+  question: "Do I need technical skills to use it?",
+  answer:
+    "Not at all. ShopNStore is designed for simplicity. If you can use WhatsApp, you can easily manage your digital card.",
+},
+{
+  question: "Is ShopNStore free to use?",
+  answer:
+    "Yes, there is a free version with essential features. Premium plans unlock advanced tools like analytics, promotional posters, and custom branding.",
+},
 
 ];
 
@@ -50,7 +50,7 @@ const FAQSection = () => {
             {/* Question */}
             <button
               onClick={() => toggleFAQ(index)}
-              className="w-full flex justify-between items-center px-4 py-3 text-left text-lg font-medium text-gray-800 hover:bg-gray-50 transition"
+              className="w-full cursor-pointer flex justify-between items-center px-4 py-3 text-left text-lg font-medium text-gray-800 hover:bg-gray-50 transition"
             >
               {faq.question}
               <span>

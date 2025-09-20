@@ -10,25 +10,25 @@ const Hero = () => {
   return (
     <>
     <Nav />
-    <div className="px-12">
-      <h1 className='text-6xl pt-30  text-center'>Carbon consultants <br /> for savvy SMEs</h1>
-      <p className='text-center pt-8'>We help small and growing businesses cut carbon, boost credibility, and <br /> move forward with confidence. Your low-carbon journey starts here.</p>     
+    <div className="px-30 font-poppins">
+      <h1 className='text-6xl pt-30   text-center'>Digital Business  <br />Cards for Local Shops</h1>
+      <p className='text-center pt-8'>We enable local businesses to create a digital identity, <br />manage payments, and engage with customers in a simple, reliable way. </p>     
      <div className='text-center pt-5'>
        <button className='bg-black text-xl  text-white py-2 px-4 rounded-full '> Get Started </button>
      </div>
 
      <div className='grid grid-cols-4  gap-4 pt-20 pb-20'>
-      <img className='rounded-xl' src="https://framerusercontent.com/images/lOIiZIbZ6z5IuKw8w5L1gAueiQ.png?scale-down-to=1024" alt="hero" />
-      <img className='rounded-xl' src="https://framerusercontent.com/images/xmOi3oUEWf9jXx7zkMLeYyPG6G4.png?scale-down-to=1024" alt="" />
-      <img className='rounded-xl' src="https://framerusercontent.com/images/uNtTHiBiVKVsv1TG5HTmpSxQ.png?scale-down-to=1024" alt="" />
-      <img className='rounded-xl' src="https://framerusercontent.com/images/C1gsYq8L4SNYikf5gEIRtjadD8.png?scale-down-to=1024" alt="" />
+      <img className='rounded-xl' src="https://images.unsplash.com/photo-1641048174454-5c48dc0baafc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDU2fHx8ZW58MHx8fHx8" alt="hero" />
+      <img className='rounded-xl' src="https://images.unsplash.com/photo-1654626950649-9761a8bff71a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D" alt="" />
+      <img className='rounded-xl' src="https://images.unsplash.com/photo-1665072750074-f708730eab23?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDI5fHx8ZW58MHx8fHx8" alt="" />
+      <img className='rounded-xl' src="https://images.unsplash.com/photo-1707300863816-4315dcd3ad3f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDM4fHx8ZW58MHx8fHx8" alt="" />
      </div>
 
      {/* //About Us Section */}
 
      <div className='text-center'>
-      <button className='bg-black text-sm pb  text-white py-2 px-4 rounded-full '>About</button>
-      <p className='text-4xl pt-4'>We're a small team of passionate <br /> carbon experts helping forward-thinking <br /> companies prepare for the future.</p>
+      <button className=' text-sm pb  bg-gray-200 py-2 px-4 rounded-full '>About</button>
+      <p className='text-5xl pt-4'>We are a team dedicated to empowering small and<br /> growing businesses with simple digital tools for visibility,<br /> payments, and customer engagement.</p>
      <button className='bg-black text-xl  text-white py-2 px-4 rounded-full mt-7 '> Get Started </button>
      </div>
 

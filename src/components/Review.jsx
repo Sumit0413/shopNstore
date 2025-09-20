@@ -2,46 +2,47 @@ import React, { useState, useEffect } from "react";
 import { FaStar, FaRegStar, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const reviews = [
-  {
-    id: 1,
-    name: "Rachal E.",
-    role: "NineTwenty",
-    text: "GreenLeaf doesn’t just give you a report—they give you insight and momentum.",
-    stars: 4,
-    img: "https://randomuser.me/api/portraits/women/68.jpg",
-  },
-  {
-    id: 2,
-    name: "Jamie L.",
-    role: "Clarity Point",
-    text: "GreenLeaf helped us turn sustainability from a buzzword into a business advantage.",
-    stars: 5,
-    img: "https://randomuser.me/api/portraits/women/47.jpg",
-  },
-  {
-    id: 3,
-    name: "Priya K",
-    role: "Harkwell",
-    text: "GreenLeaf simplifies the complex. We finally feel in control of our carbon impact.",
-    stars: 5,
-    img: "https://randomuser.me/api/portraits/women/44.jpg",
-  },
-  {
-    id: 4,
-    name: "Amit S.",
-    role: "EcoWorks",
-    text: "Working with GreenLeaf gave us a measurable competitive edge.",
-    stars: 5,
-    img: "https://randomuser.me/api/portraits/men/12.jpg",
-  },
-  {
-    id: 5,
-    name: "Sophia R.",
-    role: "FutureBright",
-    text: "Their insights helped us cut costs and boost sustainability.",
-    stars: 4,
-    img: "https://randomuser.me/api/portraits/women/29.jpg",
-  },
+{
+  id: 1,
+  name: "Ravi K.",
+  role: "General Store Owner",
+  text: "ShopNStore made it so easy for me to create a digital business card. My customers can now find my shop on Google Maps and contact me directly.",
+  stars: 5,
+  img: "https://randomuser.me/api/portraits/men/32.jpg",
+},
+{
+  id: 2,
+  name: "Neha S.",
+  role: "Boutique Owner",
+  text: "I love how ShopNStore lets me showcase my products and share offers instantly. My WhatsApp inquiries have doubled since I started using it.",
+  stars: 5,
+  img: "https://randomuser.me/api/portraits/women/65.jpg",
+},
+{
+  id: 3,
+  name: "Arjun M.",
+  role: "Electronics Shop",
+  text: "Managing payments has never been easier. With ShopNStore, I can track pending dues and send digital receipts to my customers in one click.",
+  stars: 4,
+  img: "https://randomuser.me/api/portraits/men/18.jpg",
+},
+{
+  id: 4,
+  name: "Pooja R.",
+  role: "Bakery Owner",
+  text: "The photo gallery and menu section helped me attract new customers. ShopNStore gave my small bakery a professional digital identity.",
+  stars: 5,
+  img: "https://randomuser.me/api/portraits/women/24.jpg",
+},
+{
+  id: 5,
+  name: "Imran H.",
+  role: "Mobile Accessories Shop",
+  text: "ShopNStore gave me a shareable digital card link and QR code. Now my customers can easily access my shop details and connect with me online.",
+  stars: 5,
+  img: "https://randomuser.me/api/portraits/men/41.jpg",
+},
+
 ];
 
 const ReviewSlider = () => {

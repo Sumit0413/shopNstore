@@ -3,14 +3,13 @@ import React from 'react'
 const Nav = () => {
   return (
     <>
-    <div className="flex justify-center items-center text-xl gap-96  ">
+    <div className="flex justify-between items-center text-xl px-30 font-poppins">
         <div className='text-4xl py-5'>shopNstore</div>
-        <div className='space-x-4 py-5 '>
-            <button>Login</button>
-            <button>SignUp</button>
-            <button>Logout</button>
-            <button>Profile</button>
-          
+        <div className='space-x-10 py-5 '>
+            <button className='cursor-pointer text-gray-400'>Local Shop</button>
+            <button className='cursor-pointer text-gray-400'>About</button>
+            <button className='cursor-pointer text-gray-400'>Profile</button>
+
         </div>
     </div>
     </>

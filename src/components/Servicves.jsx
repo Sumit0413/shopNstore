@@ -7,7 +7,7 @@ const Servicves = () => {
     <div>
     <div className='flex  justify-center gap-40 mt-20'>
         <div>
-              <button className='bg-gray-200 text-sm pb  text-black py-2 px-4 rounded-full mb-10'>About</button>
+              <button className='bg-gray-200 text-sm pb  text-black py-2 px-4 rounded-full mb-10'>Services</button>
               <p className='text-6xl'>Your guide for <br /> the road ahead</p>
               <p className='pt-6 text-gray-400 text-sm'>We help small and mid-sized businesses navigate the <br /> path to sustainability. Whether you're setting out or <br /> refining your route, we’ll guide you every step of the way</p>
         </div>
@@ -64,7 +64,7 @@ const Servicves = () => {
         <button className='bg-gray-200 text-sm pb  text-black py-2 px-4 rounded-full mb-10'>
             Benefits
         </button>
-        <h1 className='text-4xl'>Why choose us?</h1>
+        <h1 className='text-6xl pb-5'>Why choose us?</h1>
         <p>Sustainability can be a confusing space. We help you cut through the noise and focus on your business.</p>
     </div>
 
