@@ -1,15 +1,22 @@
 import React from 'react'
+import TextPressure from '../Animate/TextPressure';
+
+
 
 const Footer = () => {
+
   return (
    <>
+
+
+
     <div className="bg-[#13261B] text-gray-300 py-12 px-4 md:px-8 rounded-t-2xl  h-96">
       <div className="max-w-7xl mx-auto">
         {/* Main footer content */}
         <div className="flex flex-col md:flex-row justify-between mb-8">
           {/* Brand section */}
           <div className="mb-8 md:mb-0">
-            <h3 className="text-6xl  text-green-400 mb-2">shopNstore</h3>
+            <h3 className="text-6xl  text-green-400 mb-2">Bizcard+</h3>
             <p className="text-gray-400 max-w-xs">Helping small shops go online effortlessly..</p>
             <div className="flex mt-4 space-x-2">
               <span className="text-green-500">Instagram</span>
@@ -56,7 +63,28 @@ const Footer = () => {
           </div>
         </div>
       </div>
+
+  
     </div>
+    <div  style={{position: 'relative', height: '370px'}}>
+  <TextPressure
+    text="Bizcard+"
+    flex={true}
+    alpha={false}
+    stroke={false}
+    width={true}
+    weight={true}
+    italic={true}
+    textColor="#ffffff"
+    strokeColor="#ff0000"
+    minFontSize={12}
+  />
+
+</div>
+
+
+
+
    </>
   )
 }
