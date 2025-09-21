@@ -10,7 +10,7 @@ const shops = [
     sells: "Fresh vegetables & daily needs",
   address: "A-12, Lajpat Nagar II, New Delhi, Delhi 110024",
     phone: "+91 98765 43210",
-  img: "https://source.unsplash.com/400x400/?grocery,store",
+  img: "blob:https://web.whatsapp.com/527aa849-e35d-43ff-bbaf-827dadd85b11",
     description: "Gupta Grocery is your go-to destination for fresh produce and daily essentials in Lajpat Nagar. Known for quality and friendly service, we offer a wide range of groceries to meet your everyday needs."
   },
   {
@@ -65,7 +65,7 @@ export default function ShopDetails() {
           {/* Left: Large Shop Image */}
           <div className="flex flex-col items-center md:w-1/2 p-16 justify-center ">
             <img
-              src={shops.img}
+              src={shop.img}
               alt={shops.name}
               className="w-[420px] h-[420px] object-cover rounded-3xl shadow-2xl border-2  mb-8"
             />

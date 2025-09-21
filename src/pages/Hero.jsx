@@ -7,8 +7,18 @@ import Banner from '../components/Banner'
 import Footer from '../components/Footer'
 import ScrollReveal from '../Animate/ScrollReveal'
 import SplitText from "../Animate/Splittext"; 
+import CurvedLoop from '../Animate/Curvedloop'
+import { ScrollVelocity } from '../Animate/ScrollFast'
+
+
+
+
+
 
 const Hero = () => {
+
+  
+
 
    const handleAnimationComplete = () => {
   console.log('All letters have animated!');
@@ -74,11 +84,23 @@ const Hero = () => {
 
 
      <Servicves />
+
+   
+  
+<ScrollVelocity
+  texts={['BizCards +', 'Bazaar']} 
+  velocity={40} 
+  className="custom-scroll-text"
+/>
+
+
      <Resources />
      <FAQSection />
+
+
      <Banner />
      
-   
+
    
     </div>
    <Footer />

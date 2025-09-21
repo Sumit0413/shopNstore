@@ -38,3 +38,13 @@
 body {
   font-family: var(--font-poppins);
 }
+
+/* global.css */
+::-webkit-scrollbar {
+  display: none;
+}
+
+html, body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}

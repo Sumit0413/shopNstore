@@ -12,7 +12,7 @@ const Shops = () => {
     sells: "Fresh vegetables & daily needs",
     address: "Main Market, Ranchi, Jharkhand",
     phone: "+91 98765 43210",
-    img: "https://framerusercontent.com/images/PlhjsMxQAdqG8RtqxoKK4Gi0A.png?scale-down-to=1024",
+    img: "https://images.unsplash.com/photo-1758274406801-53151bcb4af7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyfHx8ZW58MHx8fHx8",
   },
   {
     id: 2,
