@@ -9,7 +9,6 @@ const Footer = () => {
    <>
 
 
-
     <div className="bg-[#13261B] text-gray-300 py-12 px-4 md:px-8 rounded-t-2xl  h-96">
       <div className="max-w-7xl mx-auto">
         {/* Main footer content */}

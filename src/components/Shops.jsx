@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import Footer from './Footer';
 import FAQSection from "../components/Faqs"
 import Banner from "../components/Banner"
@@ -190,9 +191,11 @@ const Shops = () => {
             <p className="text-gray-500 ">{shop.address}</p>
             <p className="text-gray-800 font-medium mt-2">📞 {shop.phone}</p>
           </div>
+           <Link to={`/localshops/${shop.id}`}>
           <button className="mt-4 bg-black text-white text-3xl py-2 px-4 w-full h-20 rounded-full hover:bg-blue-700 transition-colors">
             View Details
           </button>
+          </Link>
         </div>
         
       ))}
