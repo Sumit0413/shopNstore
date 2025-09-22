@@ -71,7 +71,7 @@ const ScrollStack = () => {
             <motion.div
               key={card.id}
               ref={cardRef}
-              className="h-screen flex items-center justify-center"
+              className="h-screen w-full flex items-center justify-center"
               initial={{ opacity: 0, y: 50 }}
               animate={controls}
               transition={{ duration: 1.2, ease: "easeOut" }}

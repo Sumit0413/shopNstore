@@ -9,7 +9,7 @@ import ScrollReveal from '../Animate/ScrollReveal'
 import SplitText from "../Animate/Splittext"; 
 import CurvedLoop from '../Animate/Curvedloop'
 import { ScrollVelocity } from '../Animate/ScrollFast'
-
+import FlowingMenu from '../Animate/FlowingMenu'
 
 
 
@@ -18,7 +18,14 @@ import { ScrollVelocity } from '../Animate/ScrollFast'
 const Hero = () => {
 
   
+const demoItems = [
+  { link: '#', text: 'Join Now', image: 'https://picsum.photos/600/400?random=1' },
+  { link: '#', text: 'Shop Now', image: 'https://picsum.photos/600/400?random=2' },
+  { link: '#', text: 'Visit Now', image: 'https://picsum.photos/600/400?random=3' },
+   { link: '#', text: 'Explore Now', image: 'https://picsum.photos/600/400?random=3' },
+   
 
+];
 
    const handleAnimationComplete = () => {
   console.log('All letters have animated!');
@@ -101,7 +108,11 @@ const Hero = () => {
      <Banner />
      
 
-   
+
+
+<div style={{ height: '500px', position: 'relative' }}>
+  <FlowingMenu items={demoItems} />
+</div>
     </div>
    <Footer />
     </>
