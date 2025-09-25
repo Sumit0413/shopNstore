@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import Nav from "./Nav";
 import Footer from "./Footer";
 import Banner from "../components/Banner";
@@ -169,6 +169,22 @@ export default function ShopDetails() {
                   })()}
                 </div>
                 <p className="text-gray-700 font-medium text-lg"> Address: {shop.address}</p>
+              </div>
+
+              {/* Vendor Access Button */}
+              <div className="mt-6 p-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl">
+                <div className="flex items-center justify-between text-white">
+                  <div>
+                    <h3 className="text-lg font-bold">Shop Owner Access</h3>
+                    <p className="text-blue-100 text-sm">Manage your shop, track payments, and view analytics</p>
+                  </div>
+                  <Link
+                    to={`/shop-vendor/${shop.id}`}
+                    className="bg-white text-blue-600 px-6 py-3 rounded-lg font-bold hover:bg-blue-50 transition-all duration-300 transform hover:scale-105 shadow-lg"
+                  >
+                    🏪 Vendor Dashboard
+                  </Link>
+                </div>
               </div>
             </div>
             <div className="mb-8">
