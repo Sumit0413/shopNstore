@@ -15,8 +15,8 @@ const Nav = () => {
           <Link to='/about'>
             <button className='cursor-pointer text-gray-400'>About</button>
           </Link>
-          <Link to='/profile'>    
-            <button className='cursor-pointer text-gray-400'>Profile</button>
+          <Link to='/signup'>    
+            <button className='cursor-pointer text-gray-400'>Sign Up</button>
           </Link>
         </div>
     </div>

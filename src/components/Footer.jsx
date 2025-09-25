@@ -1,5 +1,6 @@
 import React from 'react'
 import TextPressure from '../Animate/TextPressure';
+import { Link } from 'react-router-dom';
 
 
 
@@ -30,10 +31,10 @@ const Footer = () => {
             <div>
               <h4 className="text-gray-400 font-semibold uppercase tracking-wider mb-4">Pages</h4>
               <ul className="space-y-2">
-                <li><a href="#" className="hover:text-green-400 transition-colors">Home</a></li>
-                <li><a href="#" className="hover:text-green-400 transition-colors">About</a></li>
-                <li><a href="#" className="hover:text-green-400 transition-colors">Services</a></li>
-               
+                <Link to="/"><li className="hover:text-green-400 transition-colors">Home</li></Link>
+                <Link to="/about"><li className="hover:text-green-400 transition-colors">About</li></Link>
+                
+
               </ul>
             </div>
 
@@ -41,7 +42,7 @@ const Footer = () => {
             <div>
               <h4 className="text-gray-400 font-semibold uppercase tracking-wider mb-4">Information</h4>
               <ul className="space-y-2">
-                <li><a href="#" className="hover:text-green-400 transition-colors">Contact</a></li>
+                
                 <li><a href="#" className="hover:text-green-400 transition-colors">Privacy policy</a></li>
                 <li><a href="#" className="hover:text-green-400 transition-colors">Terms</a></li>
               
