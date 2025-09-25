@@ -1,17 +1,35 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import { signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { auth } from "../firebase";
+import { useNavigate } from "react-router-dom";
 
 const LoginPage = () => {
+  const navigate = useNavigate();
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => {
-    console.log("Login Data:", data);
-    // 🔗 API call or authentication logic here
-    alert(`Welcome back, ${data.email}!`);
+  const onSubmit = async (data) => {
+    try {
+      await signInWithEmailAndPassword(auth, data.email, data.password);
+      navigate("/");
+    } catch (error) {
+      alert(error.message);
+    }
+  };
+
+  // Google login handler
+  const handleGoogleLogin = async () => {
+    try {
+      const provider = new GoogleAuthProvider();
+      await signInWithPopup(auth, provider);
+      navigate("/");
+    } catch (error) {
+      alert(error.message);
+    }
   };
 
   return (
@@ -90,7 +108,7 @@ const LoginPage = () => {
           </div>
 
           <div className="flex gap-4">
-            <button className="flex-1 py-2 px-4 border rounded-lg flex items-center justify-center gap-2 hover:bg-gray-50">
+            <button type="button" onClick={handleGoogleLogin} className="flex-1 py-2 px-4 border rounded-lg flex items-center justify-center gap-2 hover:bg-gray-50">
               <img
                 src="https://www.svgrepo.com/show/475656/google-color.svg"
                 alt="Google"

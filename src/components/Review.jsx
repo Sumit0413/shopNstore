@@ -8,7 +8,7 @@ const reviews = [
   role: "General Store Owner",
   text: "ShopNStore made it so easy for me to create a digital business card. My customers can now find my shop on Google Maps and contact me directly.",
   stars: 5,
-  img: "https://randomuser.me/api/portraits/men/32.jpg",
+  img: "blob:https://web.whatsapp.com/4df2c046-f1cf-4483-840d-3db22bde479d",
 },
 {
   id: 2,

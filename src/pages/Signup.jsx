@@ -1,7 +1,11 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import { createUserWithEmailAndPassword, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { auth } from "../firebase";
+import { useNavigate } from "react-router-dom";
 
 const SignUpPage = () => {
+  const navigate = useNavigate();
   const {
     register,
     handleSubmit,
@@ -9,13 +13,27 @@ const SignUpPage = () => {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => {
-    console.log("Signup Data:", data);
-    // 🔗 Send this to backend API
-    alert(`Account created successfully for ${data.name} (${data.email})`);
+  const onSubmit = async (data) => {
+    try {
+      await createUserWithEmailAndPassword(auth, data.email, data.password);
+      navigate("/");
+    } catch (error) {
+      alert(error.message);
+    }
   };
 
   const password = watch("password");
+
+  // Google signup handler
+  const handleGoogleSignup = async () => {
+    try {
+      const provider = new GoogleAuthProvider();
+      await signInWithPopup(auth, provider);
+      navigate("/");
+    } catch (error) {
+      alert(error.message);
+    }
+  };
 
   return (
     <div className="flex h-screen">
@@ -150,14 +168,14 @@ const SignUpPage = () => {
           </form>
 
           {/* Social Signup */}
-          <div className="my-6 flex items-center">
-            <div className="flex-grow border-t border-gray-300"></div>
+          <div    className="my-6 flex items-center">
+            <div  className="flex-grow border-t border-gray-300"></div>
             <span className="mx-4 text-gray-500">Or</span>
-            <div className="flex-grow border-t border-gray-300"></div>
+            <div  className="flex-grow border-t border-gray-300"></div>
           </div>
 
           <div className="flex gap-4">
-            <button className="flex-1 py-2 px-4 border rounded-lg flex items-center justify-center gap-2 hover:bg-gray-50">
+            <button type="button" onClick={handleGoogleSignup} className="flex-1 py-2 px-4 border rounded-lg flex items-center justify-center gap-2 hover:bg-gray-50">
               <img
                 src="https://www.svgrepo.com/show/475656/google-color.svg"
                 alt="Google"
